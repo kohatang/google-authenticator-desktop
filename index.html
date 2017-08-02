@@ -3,11 +3,14 @@
   <head>
     <meta charset="UTF-8">
     <title>Google Authenticator for Desktop</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Stylesheets -->
     <link rel="stylesheet" href="./node_modules/materialize-css/dist/css/materialize.css">
     <link rel="stylesheet" href="./styles.css">
     <script>delete module.exports</script>
+    <script src="./node_modules/jquery/dist/jquery.js"></script>
     <script src="./node_modules/materialize-css/dist/js/materialize.js"></script>
+
   </head>
   <body>
     <nav>
@@ -35,24 +38,23 @@
         </div>
         
       </div>
-      <h3>Countdown</h3>
-      <p id="cowntdown"></p>
-
-      <table>
-        <thead>
-          <tr>
+      <div class="row">
+        <p class="col s3">Refreash at</h3>
+        <p id="cowntdown" class="col s3"></p>
+      </div>
+      <div class="row">
+        <table id="myTable" class="col s11">
+          <thead>
+            <tr>
               <th>Name</th>
               <th>Pin</th>
-          </tr>
-        </thead>
-
-        <tbody>
-          <tr>
-            <td id="t_name"></td>
-            <td id="t_pin"></td>
-          </tr>
-        </tbody>
-      </table>
+            </tr>
+          </thead>
+          <tbody>
+          </tbody>
+        </table>
+      </div>
+      
 
   </body>
 
