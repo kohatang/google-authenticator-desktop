@@ -4,7 +4,6 @@
 const settings = require('electron-settings')
 // settings.deleteAll()
 setInterval(timerTick, 1000)
-console.log('upadte test')
 
 const otplib = require('otplib').default
 const authenticator = require('otplib/authenticator').default
